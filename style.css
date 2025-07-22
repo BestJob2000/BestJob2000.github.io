@@ -198,6 +198,31 @@ header {
     color: var(--primary-color);
 }
 
+/* Research paper styles */
+.paper-overview {
+    background-color: #f8f9fa;
+    border-left: 3px solid var(--primary-color);
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.paper-overview ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.timeline-content .authors {
+    font-style: italic;
+}
+
+.timeline-content sup {
+    font-size: 0.7em;
+    line-height: 0;
+    position: relative;
+    vertical-align: super;
+}
+
 .skill-items {
     display: flex;
     flex-wrap: wrap;
