@@ -251,6 +251,13 @@ section:nth-of-type(even) .timeline-content { background: rgba(255, 255, 255, 0.
     border-radius: 9px;
 }
 
+.conference-logo.iccv-logo {
+    width: 156px;
+    height: 44px;
+    flex-basis: 156px;
+    padding: 2px 5px;
+}
+
 .paper-links { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 15px; }
 
 .paper-links a {
@@ -335,4 +342,5 @@ footer a:hover { color: #fff; }
     .institution-heading, .paper-heading { gap: 12px; }
     .school-logo { width: 54px; height: 54px; flex-basis: 54px; }
     .conference-logo { width: 84px; height: 38px; flex-basis: 84px; }
+    .conference-logo.iccv-logo { width: 112px; height: 36px; flex-basis: 112px; }
 }
