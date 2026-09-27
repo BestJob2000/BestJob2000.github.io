@@ -18,6 +18,7 @@
                 <div class="profile-content">
                     <h1>Junbo ZHAO 赵浚博</h1>
                     <p class="subtitle">First-year PhD student in Computer Science at The University of Queensland</p>
+                    <p class="profile-focus">Visual reasoning <span>•</span> Multimodal AI <span>•</span> Neural-symbolic reasoning</p>
                     <div class="social-links">
                         <a href="https://github.com/BestJob2000" target="_blank"><i class="fab fa-github"></i></a>
                         <a href="mailto:job20001213@outlook.com" aria-label="Email Junbo Zhao"><i class="fas fa-envelope"></i></a>
@@ -27,6 +28,17 @@
             </div>
         </div>
     </header>
+
+    <nav class="site-nav" aria-label="Primary navigation">
+        <div class="container">
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#research">Research</a>
+            <a href="#service">Service</a>
+            <a href="#experience">Experience</a>
+            <a href="#honors">Honors</a>
+        </div>
+    </nav>
 
     <section id="about" class="section">
         <div class="container">
@@ -69,7 +81,7 @@
                 </div>
                 <div class="timeline-content">
                     <h3>The University of Queensland</h3>
-                    <p class="subtitle">PhD in Computer Science</p>
+                    <p class="subtitle">Doctor of Philosophy in Computer Science</p>
                     <p><strong>Supervisors:</strong> <a href="https://staff.itee.uq.edu.au/huang/" target="_blank" rel="noopener noreferrer">Professor Helen Huang</a> and <a href="https://about.uq.edu.au/experts/40448" target="_blank" rel="noopener noreferrer">Professor Zijian Wang</a></p>
                     <p><strong>Research Focus:</strong> Visual Reasoning</p>
                 </div>
@@ -84,6 +96,7 @@
                     <p class="subtitle">Master of Engineering in Computer Science</p>
                     <p><strong>Supervisors:</strong> <a href="https://ai.bnu.edu.cn/xygk/szdw/zgj/194482e0996d4044806ac39019896e9c.htm" target="_blank" rel="noopener noreferrer">Professor Hua Huang</a> and <a href="https://hellozting.github.io/" target="_blank" rel="noopener noreferrer">Professor Ting Zhang</a></p>
                     <p><strong>Honors:</strong> Outstanding Graduate of Beijing Normal University</p>
+                    <p><strong>Thesis:</strong> Passed anonymous review (2A)</p>
                     <p><strong>Research Areas:</strong> Educational LMMs/VLMs, Reasoning VLMs, Computer Vision</p>
                     <p><strong>Major Courses:</strong> Computer Graphics, Computer Vision, etc.</p>
                     <p><strong>Student Work:</strong> Teaching Assistant for Linear Algebra class (Mar 2024 – Jul 2024)</p>
@@ -96,7 +109,7 @@
                 </div>
                 <div class="timeline-content">
                     <h3>Minzu University of China (Project 985)</h3>
-                    <p class="subtitle">Bachelor of Computer Science</p>
+                    <p class="subtitle">Bachelor of Engineering in Computer Science</p>
                     <p><strong>Honors:</strong> Outstanding Graduate of Beijing</p>
                     <p><strong>Major Courses:</strong> Algorithm Analysis, Databases, Data Structures, Software Engineering, Data Mining, etc.</p>
                     <p><strong>Student Work:</strong> President, Minzu University of China Computer Association (Sep 2021 – Jul 2022)</p>
@@ -114,7 +127,10 @@
                     <span>Sep 2025 - Jan 2026</span>
                 </div>
                 <div class="timeline-content">
-                    <h3>Pri-TPG Framework (ICML 2026, First Author)</h3>
+                    <h3>Non-Parametric Structural Priors for Geometry Theorem Prediction (ICML 2026, First Author)</h3>
+                    <p><strong>Authors:</strong> <span class="authors">Junbo Zhao<sup>1,2,3†</sup>, Ting Zhang<sup>1,2,3</sup>, Can Li<sup>1</sup>, Wei He<sup>4</sup>, Jingdong Wang<sup>4</sup>, Hua Huang<sup>1,2,3✉</sup></span></p>
+                    <p><strong>Institutions:</strong> <sup>1</sup>School of Artificial Intelligence, Beijing Normal University, <sup>2</sup>Engineering Research Center of Intelligent Technology and Educational Application, Ministry of Education, <sup>3</sup>Beijing Key Laboratory of Artificial Intelligence for Education, <sup>4</sup>Baidu</p>
+                    <p class="paper-links"><a href="https://arxiv.org/abs/2603.04852" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Paper</a><a href="https://github.com/BNU-ERC-ITEA/Pri-TPG" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a></p>
                     <div class="paper-overview">
                         <p><strong>Overview:</strong> Pri-TPG introduces Theorem Precedence Graphs, a directed structural prior distilled from historical solution traces to encode valid theorem-application order and mitigate structural drift in deep in-context learning reasoning.</p>
                         <p><strong>Method:</strong> This training-free pipeline constructs query-specific graphs via retrieval, then couples an LLM planner with a stepwise symbolic executor for verifiable multi-step theorem prediction.</p>
@@ -131,7 +147,7 @@
                     <h3>Pi-GPS: Enhancing Geometry Problem Solving by Unleashing the Power of Diagrammatic Information (ICCV 2025, First Author)</h3>
                     <p><strong>Authors:</strong> <span class="authors">Junbo Zhao<sup>1†</sup>, Ting Zhang<sup>1†</sup>, Jiayu Sun<sup>1</sup>, Mi Tian<sup>2</sup>, Hua Huang<sup>1✉</sup></span></p>
                     <p><strong>Institutions:</strong> <sup>1</sup>Beijing Normal University, <sup>2</sup>TAL</p>
-                    <p><strong>Paper Link:</strong> <a href="https://arxiv.org/abs/2503.05543" target="_blank">https://arxiv.org/abs/2503.05543</a></p>
+                    <p class="paper-links"><a href="https://arxiv.org/abs/2503.05543" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Paper</a><a href="https://github.com/hellozting/Pi-GPS" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a></p>
                     
                     <div class="paper-overview">
                         <p><strong>Overview:</strong> We proposed a novel framework for geometry problem solving that leverages diagrammatic information to resolve textual ambiguities. Our approach combines multi-modal understanding with symbolic reasoning to achieve state-of-the-art performance.</p>
@@ -145,6 +161,23 @@
                         
                         <p><strong>Results:</strong> Pi-GPS achieves state-of-the-art results, outperforming previous neural-symbolic methods by nearly 10% on standard benchmarks, including Geometry3K (77.8% on choice tasks) and PGPS9K (69.8% on choice tasks).</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="service" class="section">
+        <div class="container">
+            <h2 class="section-title">Academic Service</h2>
+
+            <div class="timeline-item">
+                <div class="timeline-date">
+                    <span>2023 - 2026</span>
+                </div>
+                <div class="timeline-content">
+                    <h3>School of Artificial Intelligence, Beijing Normal University</h3>
+                    <p>Graduate Student Union Representative (6th); student judge at the 2024 Student Leadership Conference; and participant in student consultation forums.</p>
+                    <p><strong>Teaching:</strong> Teaching Assistant, Linear Algebra undergraduate course (Mar 2024 - Jul 2024).</p>
                 </div>
             </div>
         </div>
@@ -225,6 +258,16 @@
                 <div class="timeline-content">
                     <h3>Outstanding Graduate</h3>
                     <p>Beijing Normal University</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">
+                    <span>2024 - 2026</span>
+                </div>
+                <div class="timeline-content">
+                    <h3>Four-time ZhiYan Cup Badminton Champion</h3>
+                    <p>Men's singles, men's doubles (twice), and mixed doubles - School of Artificial Intelligence, Beijing Normal University.</p>
                 </div>
             </div>
 
