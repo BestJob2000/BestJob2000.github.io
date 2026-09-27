@@ -319,6 +319,9 @@ section:nth-of-type(even) .timeline-content { background: rgba(255, 255, 255, 0.
 
 footer { padding: 32px 0; color: #b9c7d6; font-size: 0.9rem; text-align: center; background: var(--navy); }
 footer p + p { margin-top: 3px; }
+footer a { color: #d8f2f3; }
+footer a:hover { color: #fff; }
+.analytics-note { font-size: 0.78rem; opacity: 0.8; }
 
 @media (max-width: 720px) {
     header { padding: 68px 0 62px; }
