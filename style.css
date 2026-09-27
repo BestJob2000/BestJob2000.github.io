@@ -180,9 +180,16 @@ section:nth-of-type(even) { background: var(--surface-soft); }
     border: 1px solid var(--border);
     border-radius: 12px;
     box-shadow: 0 4px 16px rgba(16, 35, 63, 0.035);
+    transition: box-shadow 0.22s ease, transform 0.22s ease, border-color 0.22s ease;
 }
 
 section:nth-of-type(even) .timeline-content { background: rgba(255, 255, 255, 0.9); }
+
+.timeline-content:hover {
+    border-color: #bddde1;
+    box-shadow: 0 16px 32px rgba(16, 35, 63, 0.09);
+    transform: translateY(-3px);
+}
 
 .timeline-content::before {
     position: absolute;
@@ -204,6 +211,45 @@ section:nth-of-type(even) .timeline-content { background: rgba(255, 255, 255, 0.
 .timeline-content ul { margin: 10px 0 8px 20px; }
 .timeline-content .authors { color: #40516a; font-style: italic; }
 .timeline-content sup { font-size: 0.7em; line-height: 0; vertical-align: super; }
+
+.institution-heading,
+.paper-heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 18px;
+}
+
+.institution-heading > div,
+.paper-heading h3 {
+    min-width: 0;
+    flex: 1;
+}
+
+.institution-heading .subtitle { margin-bottom: 12px; }
+
+.school-logo {
+    width: 66px;
+    height: 66px;
+    flex: 0 0 66px;
+    padding: 4px;
+    object-fit: contain;
+    background: #fff;
+    border: 1px solid #e2eaf1;
+    border-radius: 14px;
+    box-shadow: 0 7px 18px rgba(16, 35, 63, 0.08);
+}
+
+.conference-logo {
+    width: 104px;
+    height: 46px;
+    flex: 0 0 104px;
+    padding: 5px 8px;
+    object-fit: contain;
+    background: #fff;
+    border: 1px solid #e2eaf1;
+    border-radius: 9px;
+}
 
 .paper-links { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 15px; }
 
@@ -283,4 +329,7 @@ footer p + p { margin-top: 3px; }
     .timeline-content { padding: 20px; }
     .timeline-content::before { display: none; }
     .profile-focus { line-height: 1.8; }
+    .institution-heading, .paper-heading { gap: 12px; }
+    .school-logo { width: 54px; height: 54px; flex-basis: 54px; }
+    .conference-logo { width: 84px; height: 38px; flex-basis: 84px; }
 }
